@@ -1,0 +1,14 @@
+{
+	"version": "0.0.1",
+	"assets": [
+		"http://code.jquery.com/jquery-1.10.2.js",
+		"https://raw.github.com/jashkenas/underscore/master/underscore.js",
+		"https://raw.github.com/jashkenas/backbone/master/backbone.js",
+		"https://raw.github.com/cowboy/jquery-throttle-debounce/v1.1/jquery.ba-throttle-debounce.js",
+		"https://raw.github.com/imakewebthings/jquery-waypoints/master/waypoints.js",
+		"http://fgnass.github.io/spin.js/dist/spin.js",
+		"https://raw.github.com/davatron5000/FitText.js/master/jquery.fittext.js",
+		"https://raw.github.com/davatron5000/Lettering.js/master/jquery.lettering.js"
+	],
+	"bits": []
+}

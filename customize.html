@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>picnicc - simple boilerplate</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Remote plugins from their source">
+        <meta name="author" content="Alex Duloz - http://bitspushedaround.com">
+        <style>
+            label {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+
+
+            <h1>Picnicc: simple boilerplate</h1>
+            
+            <form name="picnicc" action="https://picni.cc/api/v1/build/" method="post">
+
+                <input type="hidden" name="username" value="picnicc"> 
+                <input type="hidden" name="project" value="simple-dependencies.js">
+                <input type="hidden" name="picnicc" value="https://raw.github.com/picnicc/example.simple-boilerplate/gh-pages/picnicc.json">
+                <input type="hidden" name="if_success" value="302">
+                <input type="hidden" name="if_error" value="_picnicc">
+
+                <h2>Compile the libs you are going to use</h2>
+
+                <label>
+                    <input type="checkbox" name="assets[]" value="http://code.jquery.com/jquery-1.10.2.js">
+                    Add <a href="https://jquery.org/">jQuery</a> to your project
+                </label>
+
+                <label>
+                    <input type="checkbox" name="assets[]" value="https://raw.github.com/jashkenas/underscore/master/underscore.js">
+                    Add <a href="http://underscorejs.org/">Underscore</a> to your project
+                </label>
+
+                <label>
+                    <input type="checkbox" name="assets[]" value="https://raw.github.com/jashkenas/backbone/master/backbone.js">
+                    Add <a href="http://backbonejs.org/">Backbone</a> to your project
+                </label>
+
+                <label>
+                    <input type="checkbox" name="assets[]" value="https://raw.github.com/imakewebthings/jquery-waypoints/master/waypoints.js">
+                    Add <a href="http://imakewebthings.com/jquery-waypoints/">jQuery Waypoints</a> to your project
+                </label>
+
+                <label>
+                    <input type="checkbox" name="assets[]" value="http://fgnass.github.io/spin.js/dist/spin.js">
+                    Add <a href="http://fgnass.github.io/spin.js/">Spin.js</a> to your project
+                </label>
+
+                <label>
+                    <input type="checkbox" name="assets[]" value="https://raw.github.com/davatron5000/FitText.js/master/jquery.fittext.js">
+                    Add <a href="http://fittextjs.com/">FitText</a> to your project
+                </label>
+
+                <label>
+                    <input type="checkbox" name="assets[]" value="https://raw.github.com/davatron5000/Lettering.js/master/jquery.lettering.js">
+                    Add <a href="http://letteringjs.com/">Lettering.js</a> to your project
+                </label>
+
+                <label>
+                    <input type="checkbox" name="assets[]" value="https://raw.github.com/cowboy/jquery-throttle-debounce/v1.1/jquery.ba-throttle-debounce.js">
+                    Add <a href="http://benalman.com/projects/jquery-throttle-debounce-plugin/">jQuery Throttle Debounce</a> to your project
+                </label>
+
+                <label>
+                    <input type="checkbox" name="minify" value="js" checked="checked">
+                    Minify
+                </label>
+
+                <button>Build it!</button>
+            </form>
+
+    </body>
+</html>
